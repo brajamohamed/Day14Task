@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: container-fluid;
+  background-color: #e0e3eb;
+}
+.container {
+  /* max-width: 350px; */
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+}
+.keypad-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+}
+.display {
+  text-align: right;
+  height: 50px;
+  width: 90%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-top: 50px;
+  pointer-events: none;
+}
+.button {
+  padding: 10px 20px;
+  outline: none;
+  /* width: 70px; */
+  margin: 6px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.operator {
+  color: blue;
+}
+.equals {
+  grid-column: 3/5;
+}
